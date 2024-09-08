@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: linear-gradient(45deg, cyan, magenta);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hding {
+  margin-bottom: 20px;
+}
+
+.box {
+  padding: 15px;
+  min-width: 100px;
+  max-width: 500px;
+  height: auto;
+  box-shadow: 0 0 12px 7px magenta;
+  border-radius: 10px;
+}
+
+.ques {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.ans {
+  padding: 5px;
+}
+
+.box1 {
+  display: flex;
+  box-shadow: 5px 5px 5px 2px cyan; /* Correction des virgules */
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: rgb(121, 121, 121);
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+.box1:active,
+.hding:hover { /* Correction de la classe h1 à hding */
+  box-shadow: 0 0 5px 2px rgb(234, 0, 255);
+}
+
+.box2 {
+  padding-left: 5px;
+  width: 100%;
+  /* Suppression du padding à 100% car non conventionnel */
+}
+
+.nxt {
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px 2px rgb(63, 63, 63);
+  border-radius: 10px;
+  background: linear-gradient(to left, magenta,cyan);
+margin-bottom: 15px;
+}
+
+.nxt:active{
+  transform: scale(0.95);
+}
+.win{
+  display: none;
+}
+.win h1{
+font-family: cursive,Verdana, Geneva, Tahoma, sans-serif;
+margin: 15px;
+}
+
+
+/* Media Queries */
+
+/* Pour les écrans larges */
+@media (min-width: 768px) {
+  header nav ul {
+      text-align: center;
+  }
+
+  nav ul li {
+      display: inline-block;
+  }
+
+  main {
+      display: flex;
+      justify-content: space-around;
+  } */
+
+  section {
+      flex: 1;
+      margin: 0 10px;
+  } 
+}
+
+/* Pour les écrans moyens */
+@media (max-width: 767px) {
+  nav ul {
+      text-align: center;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  main {
+      padding: 10px;
+  } 
+}
+
+/* Pour les écrans très petits */
+@media (max-width: 480px) {
+  header {
+      font-size: 14px;
+  }
+
+  nav ul li a {
+      font-size: 12px;
+  }
+
+  main {
+      padding: 5px;
+  }
+} 
